@@ -4,7 +4,7 @@
 
 Установка последней версии пакета:
 ```
-npm install @blaze-su/code-style
+npm install @blaze-su/eslint-config
 ```
 
 ## ESLint
