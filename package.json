@@ -1,7 +1,7 @@
 {
     "name": "@blaze-su/eslint-config",
-    "version": "0.1.0",
-    "private": true,
+    "version": "1.0.0",
+    "main": "./config/.eslintrc",
     "devDependencies": {
         "@types/node": "^12.0.0",
         "@types/react": "^16.9.53",
@@ -49,5 +49,9 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/blaze-su/eslint-config"
     }
 }
