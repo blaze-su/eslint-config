@@ -35,7 +35,7 @@ npm install @blaze-su/eslint-config
       "typescript",
       "typescriptreact"
     ]
-  }
+}
 ```
 
 ##

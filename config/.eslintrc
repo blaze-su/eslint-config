@@ -26,6 +26,7 @@
 				"@typescript-eslint/no-tabs": "off",
 				"@typescript-eslint/quotes": ["error", "double", { "allowTemplateLiterals": true }],
 				"@typescript-eslint/explicit-module-boundary-types": "off",
+				"@typescript-eslint/comma-dangle": "off",
 				/* React JSX */
 				"react/jsx-indent": ["error", "tab"],
 				"react/react-in-jsx-scope": "off"
