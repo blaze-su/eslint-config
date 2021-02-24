@@ -1,67 +1,35 @@
 {
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": 2020,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "project": "./tsconfig.json"
-    },
-    "plugins": ["prettier", "@typescript-eslint/eslint-plugin"],
-    "extends": [
-        "prettier",
-        "eslint:recommended",
-        "eslint-config-prettier",
-        "eslint-config-prettier/@typescript-eslint"
-    ],
-    "rules": {
-        "strict": ["error", "never"],
-        "quotes": ["error", "double", { "allowTemplateLiterals": true }]
-    },
-    "overrides": [
-        {
-            "files": ["*.tsx", "*.ts"],
-            "extends": ["airbnb-typescript"],
-            "rules": {
-                "quotes": ["error", "double", { "allowTemplateLiterals": true }],
-                "no-tabs": "off",
-                "arrow-spacing": "error",
-
-                /* React */
-                "react/react-in-jsx-scope": "off",
-                "react/jsx-indent": ["error", "tab"],
-
-                /* Limit */
-                "max-lines-per-function": ["error", { "max": 140 }],
-                "max-params": ["error", { "max": 6 }],
-
-                /* TypeScript */
-                "@typescript-eslint/indent": ["error", "tab"],
-                "@typescript-eslint/no-tabs": "off",
-                "@typescript-eslint/quotes": ["error", "double", { "allowTemplateLiterals": true }],
-                "@typescript-eslint/explicit-module-boundary-types": "off",
-
-                /* Object */
-                "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": true }],
-                "object-curly-spacing": ["error", "never"],
-                "object-curly-newline": ["error", {"multiline": false, "minProperties": 4}],
-
-                /* Array */
-                "array-bracket-newline": ["error", { "multiline": true, "minItems": 4 }],
-                "array-element-newline": ["error", { "multiline": true, "minItems": 4 }],
-
-                /* Padding */
-                "lines-around-comment": ["error", { "beforeBlockComment": true }],
-                "padding-line-between-statements": [
-                    "error",
-                    { "blankLine": "always", "prev": "*", "next": "return" },
-                    { "blankLine": "always", "prev": "*", "next": "return" },
-                    { "blankLine": "always", "prev": "*", "next": "block-like" },
-                    { "blankLine": "never", "prev": "singleline-const", "next": "const" },
-                    { "blankLine": "always", "prev": "block-like", "next": "*" }
-                ]
-            }
-        }
-    ]
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"project": "./tsconfig.json"
+	},
+	"plugins": ["prettier", "@typescript-eslint/eslint-plugin"],
+	"extends": ["prettier", "eslint-config-prettier", "eslint-config-prettier/@typescript-eslint"],
+	"rules": {
+		"strict": ["error", "never"],
+		"quotes": ["error", "double", { "allowTemplateLiterals": true }]
+	},
+	"overrides": [
+		{
+			"files": ["*.tsx", "*.ts", "*.json"],
+			"extends": ["airbnb-typescript"],
+			"rules": {
+				"no-tabs": "off",
+				"indent": ["error", "tab"],
+				/* TypeScript */
+				"@typescript-eslint/indent": ["error", "tab"],
+				"@typescript-eslint/no-tabs": "off",
+				"@typescript-eslint/quotes": ["error", "double", { "allowTemplateLiterals": true }],
+				"@typescript-eslint/explicit-module-boundary-types": "off",
+				/* React JSX */
+				"react/jsx-indent": ["error", "tab"],
+				"react/react-in-jsx-scope": "off"
+			}
+		}
+	]
 }

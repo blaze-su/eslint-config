@@ -1,19 +1,21 @@
+/* eslint-disable react/react-in-jsx-scope */
 import logo from "./logo.svg";
 import "./App.css";
 
 const fn = () => {
 	// eslint-disable-next-line
-    console.log("fn");
+	console.log("fn");
 };
 
 const fn2 = (next: any) => {
 	const arr = ["news", "dota", "sun beach"];
+	// eslint-disable-next-line no-console
 	console.log("fn", next);
 	const a = 1;
-
+	// eslint-disable-next-line no-console
 	if (a === 1) console.log("a", a);
 
-	return {a, arr};
+	return { a, arr };
 };
 
 fn();
@@ -22,6 +24,7 @@ fn2("fn22");
 const fn3 = (a: number, b: number, c: number, d: number) => {
 	const a1 = 3;
 	const a2 = 4;
+
 	const obj = {
 		a,
 		b,
@@ -29,29 +32,14 @@ const fn3 = (a: number, b: number, c: number, d: number) => {
 		d,
 	};
 
-	const obj2 = {a, b};
+	const obj2 = { a, b };
 	const arr0 = [1, 2];
-	const arr = [
-		...arr0,
-		1,
-		2,
-		3,
-		3,
-		4,
-		4,
-		1,
-		2,
-		3,
-		3,
-		4,
-		4,
-	];
+	const arr = [...arr0, 1, 2, 3, 3, 4, 4, 1, 2, 3, 3, 4, 4];
 
 	return {
 		a,
 		b,
 		c,
-		d,
 		arr,
 		a1,
 		a2,

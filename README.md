@@ -15,7 +15,7 @@ npm install @blaze-su/eslint-config
 // package.json
 
 "eslintConfig": {
-    "extends": ["@blaze-su/code-style"]
+    "extends": ["@blaze-su/eslint-config"]
 }
 ```
 
@@ -34,13 +34,6 @@ npm install @blaze-su/eslint-config
       "javascriptreact",
       "typescript",
       "typescriptreact"
-    ],
-    "prettier.disableLanguages": [
-      "javascript",
-      "javascriptreact",
-      "typescript",
-      "typescriptreact",
-      "markdown"
     ]
   }
 ```
